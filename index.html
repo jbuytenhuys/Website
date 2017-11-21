@@ -1,20 +1,29 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Login or Register</title>
 	<meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css" />
 </head>
 <body>
-   <header>
-       <img />
-       <h1 id="Master Page Heading">Ash Tree Vets</h1>
-   </header>
+    <img />
+    <h1 id="Index Page Heading">Ash Tree Vets</h1>
+    <p>Welcome to Ash Tree Vets online booking system. 
+    Please login in to view your account.</p>
 
-    <nav>
-        <ul>
-            <li><a href="index.html"></a>Login</li>
-            <li><a href="Register.html"></a>Register</li>
-        </ul>
-    </nav>
+    <form action="Homepage.html">
+        <fieldset>
+            <legend>Account Details</legend>
+            Email Address:<br />
+            <input type="email" name="EmailAddress" />
+            <br />
+            Password:
+            <br />
+            <input type="password" />
+            <br />
+            <input type="submit" name="Login" />
+            <br />
+        </fieldset>
+    </form>
 </body>
 </html>
