@@ -1,15 +1,23 @@
 ﻿body {
 }
 
-.Img-container {
+.Img-Homepage-Container {
     position: relative;
     text-align: center;
-    background-color: purple;
-    margin-top:30px;
+    background-color: papayawhip;
+    margin-top:25px;
+    height:300px
+}
+
+.Img-Login-Container {
+    position: relative;
+    text-align: center;
+    background-color: papayawhip;
+    height:300px
 }
 
 .Top-Img {
-    opacity:0.5;
+    opacity:0.7;
     width:80%;
     height:300px;
 }
@@ -45,6 +53,8 @@ input:focus {
     width: 100%;
 }
 
+input[type:]
+
 .Login-Form {
     width:15%;
     position:fixed;
@@ -68,6 +78,11 @@ input:focus {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
+}
+
+.navbar a:hover{
+    background-color:black;
+    color:papayawhip;
 }
 
 .AboutUs-Heading{
