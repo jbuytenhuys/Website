@@ -16,6 +16,7 @@
 
     <nav class="navbar">
         <a href="#AboutUs">About Us</a>
+        <a href="#MeetTheTeam">Meet The Team</a>
         <a href="#News">Booking</a>
         <a href="#Contact">Contact</a>
         <a href="#Location">Location</a>
@@ -23,14 +24,116 @@
     </nav>
 
     <section>
-        <h2 class="AboutUs-Heading">About Us</h2>
-        <p>
-
+        <h2 id="AboutUs" class="Headings">About Us</h2>
+        <p class="AboutUsText">
+            alkrmngnrkjezanfrkjenvkjnevfrbeskrjbf,ersjvnkjdsfrnbvksjebrgkjerbvkjfrbvkjbvkjerbf
         </p>
 
     </section>
     <hr />
+    <section>
+        
+        <h2 id="MeetTheTeam" class="Headings">Meet The Team</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="Doctor1.jpg" style="width:40%; height:400px;">
+                <div class="text">Jonny Davidson</div>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="Doctor2.jpg" style="width:45%; height:400px;">
+                <div class="text">
+                    <p>Michael Jordan</p>
+                    <p>Michael started his career in 1990 as a professional basketball player before dsciovering his love for helping animals in need</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Doctor3.jpg" style="width:39%; height:400px;">
+                <div class="text">Rick Grimes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        }
+        </script>
+    </section>
+    <hr />
+
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
+    <p>d</p>
 
 </body>
 </html>
