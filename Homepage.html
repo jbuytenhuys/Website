@@ -3,137 +3,173 @@
 <head>
     <title>Login or Register</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/StyleSheet.css" />
+    <script>
+        //javascript for reducing the distance the page scrolls when jumping to an acnhored heading
+        var shiftWindow = function () { scrollBy(0, -62) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+
+    </script>
 </head>
 <body>
     <section class="Img-Homepage-Container">
         <img class="Top-Img" src="tester.jpg" alt="dog">
-        <h1 class="Img-Title">Ash Tree Vets</h1>
+        <h1 id="Top" class="Img-Title">Ash Tree Vets</h1>
         <p class="Img-Text">
             welcome, *username*
         </p>
     </section>
 
-    <nav class="navbar">
+    <nav class="navbar" id="Topnav">
+        <a href="#Top" id="TopBtn" style="display:none;">Back to Top</a>
         <a href="#AboutUs">About Us</a>
         <a href="#MeetTheTeam">Meet The Team</a>
         <a href="#News">Booking</a>
         <a href="#Contact">Contact</a>
         <a href="#Location">Location</a>
         <a href="index.html" style="float:right;">Logout</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("Topnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+        }
 
-    <section>
-        <h2 id="AboutUs" class="Headings">About Us</h2>
-        <p class="AboutUsText">
-            alkrmngnrkjezanfrkjenvkjnevfrbeskrjbf,ersjvnkjdsfrnbvksjebrgkjerbvkjfrbvkjbvkjerbf
-        </p>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-    </section>
-    <hr />
-    <section>
-        
-        <h2 id="MeetTheTeam" class="Headings">Meet The Team</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="Doctor1.jpg" style="width:40%; height:400px;">
-                <div class="text">Jonny Davidson</div>
-            </div>
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("TopBtn").style.display = "block";
+            } else {
+                document.getElementById("TopBtn").style.display = "none";
+            }
+        }
+    </script>
+    <main>
+        <section>
+            <h2 id="AboutUs" class="Headings">About Us</h2>
+            <p class="AboutUsText">
+                alkrmngnrkjezanfrkjenvkjnevfrbeskrjbf,ersjvnkjdsfrnbvksjebrgkjerbvkjfrbvkjbvkjerbf
+            </p>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="Doctor2.jpg" style="width:45%; height:400px;">
-                <div class="text">
-                    <p>Michael Jordan</p>
-                    <p>Michael started his career in 1990 as a professional basketball player before dsciovering his love for helping animals in need</p>
+        </section>
+        <hr />
+        <section>
+
+            <h2 id="MeetTheTeam" class="Headings">Meet The Team</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Doctor1.jpg" style="width:40%; height:400px;">
+                    <div class="text">Jonny Davidson</div>
                 </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Doctor2.jpg" style="width:45%; height:400px;">
+                    <div class="text">
+                        <p>Michael Jordan</p>
+                        <p style="padding-left:500px;">
+                            Michael started his career in 1990 as a professional basketball player before discovering his love for helping animals in need.<br />
+                            <br />Soon after gaining his phd from DeMontfort University in 2004, he joined the Ash Tree Vets team and has been a valuable asset ever since.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Doctor3.jpg" style="width:39%; height:400px;">
+                    <div class="text">Rick Grimes</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="Doctor3.jpg" style="width:39%; height:400px;">
-                <div class="text">Rick Grimes</div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
 
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
+        <hr />
 
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        }
-        </script>
-    </section>
-    <hr />
-
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
-    <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+        <p>d</p>
+    </main>
+   
 
 </body>
 </html>
