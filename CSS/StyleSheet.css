@@ -91,6 +91,14 @@ input:focus {
 
 .Headings{
     text-align:center;
+    font-size:30px;
+}
+
+.AboutUsSection{
+    text-align:center;
+    position:relative;
+    max-width:1000px;
+    margin:auto;
 }
 
 * {box-sizing:border-box}
