@@ -116,51 +116,15 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    var dots = document.getElementsByClassName("dot");
-                    if (n > slides.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = slides.length }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                }
-            </script>
+    
         </section>
         <hr />
 
-       
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <p>d</p>
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyB4YbNg3-J_UEJnL6Jw-tUr350P9OFptEk" allowfullscreen></iframe>
+        <section>
+            <iframe class="GoogleMap" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyB4YbNg3-J_UEJnL6Jw-tUr350P9OFptEk" allowfullscreen></iframe>
+        </section>
     </main>
    
-
+    <script type="text/javascript" language="javascript" src="Slideshow.js"></script>s
 </body>
 </html>
