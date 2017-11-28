@@ -6,21 +6,23 @@
     text-align: center;
     background-color: papayawhip;
     margin-top:25px;
-    height:300px
+    max-height:300px;
+    height:auto;
 }
 
 .Img-Login-Container {
     position: relative;
     text-align: center;
     background-color: papayawhip;
-    height:300px
+    max-height:300px;
+    height:auto;
 }
 
 .Top-Img {
     opacity:0.7;
     width:80%;
-    height:300px;
-    object-fit:cover;
+    max-height:300px;
+    height:auto;
 }
 
 .Img-Title {
@@ -108,6 +110,10 @@ input:focus {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.Slide-Img{
+    height:400px;
 }
 
 .mySlides {
@@ -199,7 +205,19 @@ input:focus {
   to {opacity: 1}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1600px) {
+    .Img-Title{
+        font-size:55px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .Img-Title{
+        font-size:40px;
+    }
+}
+
+@media screen and (max-width: 950px) {
     .navbar a:not(:first-child) {
         display: none;
     }
@@ -208,9 +226,6 @@ input:focus {
         float: right;
         display: block;
     }
-}
-
-@media screen and (max-width: 600px) {
     .navbar.responsive {
         position: fixed;
         top: 0;
@@ -218,17 +233,38 @@ input:focus {
         z-index: 500;
     }
 
-        .navbar.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-        .navbar.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .Img-Title{
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Img-Title{
+        font-size:20px;
+    }
+
+    .Img-Homepage-Container {
+    margin-top:40px;
+    
+}
+}
+
+@media screen and (max-width: 500px) {
+    .Img-Title{
+        font-size:10px;
+    }
 }
 
 .GoogleMap{
