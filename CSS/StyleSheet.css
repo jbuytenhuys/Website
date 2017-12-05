@@ -1,6 +1,14 @@
 ﻿body {
 }
 
+.Float-Right{
+    float:right;
+}
+
+.Text-Center{
+    text-align:center;
+}
+
 .Img-Homepage-Container {
     position: relative;
     text-align: center;
@@ -70,6 +78,7 @@ input:focus {
     .navbar a.icon {
         float: right;
         display: block;
+        font-size:15px
     }
     .navbar.responsive {
         position: fixed;
@@ -142,7 +151,7 @@ input:focus {
 }
 
 .Slide-Img{
-    height:200px;
+    
     width:150px;
 }
 
@@ -309,7 +318,7 @@ input:focus {
     }
 
     .VetText {
-        padding-left: 350px;
+        padding-left: 340px;
         font-size: 20px;
         
     }
