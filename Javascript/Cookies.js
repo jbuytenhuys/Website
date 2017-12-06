@@ -1,17 +1,17 @@
 ﻿function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
+    let d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toGMTString();
+    let expires = "expires=" + d.toGMTString();
     //document.cookie = document.getElementById('cookietest')
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
@@ -24,10 +24,12 @@ function getCookie(cname) {
 document.getElementById('Loginbtn').addEventListener('click', HideLoginForm)
 let LoginForm = document.getElementById("LoginForm")
 let LoginHeading = document.getElementById("Login")
+let NavLogin = document.getElementById("NavLogin")
 
 function HideLoginForm() {
     LoginForm.style.display = "none";
     LoginHeading.style.display = "none";
+    NavLogin.style.display = "none";
     checkCookie();
 }
 
@@ -36,13 +38,12 @@ function checkCookie(User) {
     if (User != "") {
         PerformGreeting(User);
     } else {
-        if (User != "" && User != null) {
+        //if (User != "" && User != null) {
 
-        var plsbecookie = document.getElementById('cookietest').value;
+        let plsbecookie = document.getElementById('cookietest').value;
         alert("Thankyou, " + plsbecookie + ", for logging in");
         setCookie('Username', plsbecookie, 30);
         checkCookie();
-      }
 
 
     }
