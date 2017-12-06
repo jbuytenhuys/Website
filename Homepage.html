@@ -15,11 +15,12 @@
     </script>
 </head>
 <body>
+    
     <section class="Img-Homepage-Container">
         <img class="Top-Img" src="Images/tester.jpg" alt="dog">
         <h1 id="Top" class="Img-Title">DeMonfort Vets</h1>
         <p class="Img-Text">
-            welcome, *Username*
+            welcome, <span id="Username">unknown user</span>
         </p>
     </section>
 
@@ -28,7 +29,8 @@
         <a href="#AboutUs">About Us</a>
         <a href="#MeetTheTeam">Meet The Team</a>
         <a href="#Location">Location</a>
-        <a href="index.html" style="float:right">Logout</a>
+        <a href="#Login">Login</a>
+        <a href="Homepage.html" onclick="deleteCookie()" style="float:right">Logout</a>
         <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
     
@@ -109,8 +111,30 @@
             <h2 id="Location" class="Headings">Location</h2>
             <iframe class="GoogleMap" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyB4YbNg3-J_UEJnL6Jw-tUr350P9OFptEk" allowfullscreen></iframe>
         </section>
+
+        <hr />
+
+        <section class="AboutUsSection">
+                <h2 id="Login" class="Headings">Login</h2>
+            <form >
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <input type="text" name="Username" id="cookietest" placeholder="Username.." />
+                    <br />
+                    <input type="password" placeholder="Password.." />
+                    <br />
+                    <input type="submit" name="Login" onclick="checkCookie()" />
+                    <br />
+                </fieldset>
+            </form>
+
+
+
+
+        </section>
     </main>
    
     <script src="Javascript/Slideshow.js"></script>
+    <script src="Javascript/Cookies.js"></script>
 </body>
 </html>
