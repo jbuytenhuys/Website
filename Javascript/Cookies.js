@@ -21,29 +21,37 @@ function getCookie(cname) {
     }
     return "";
 }
+document.getElementById('Loginbtn').addEventListener('click', HideLoginForm)
+let LoginForm = document.getElementById("LoginForm")
+let LoginHeading = document.getElementById("Login")
+
+function HideLoginForm() {
+    LoginForm.style.display = "none";
+    LoginHeading.style.display = "none";
+    checkCookie();
+}
 
 function checkCookie(User) {
     var User = getCookie("Username");
     if (User != "") {
         PerformGreeting(User);
     } else {
-        //User = document.write('No way kimosabi');
-        // if (User != "" && User != null) {
+        if (User != "" && User != null) {
 
         var plsbecookie = document.getElementById('cookietest').value;
-        alert("cookie has been set");
-        //document.write("cookie has been set");
+        alert("Thankyou, " + plsbecookie + ", for logging in");
         setCookie('Username', plsbecookie, 30);
         checkCookie();
-        //  }
+      }
 
 
     }
 }
+document.getElementById('Logoutbtn').addEventListener('click', deleteCookie)
 
 function deleteCookie(name) {
     document.cookie = "Username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    alert("cookie has been deleted");
+    alert("Logout complete");
 }
 
 function PerformGreeting(User) {

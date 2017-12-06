@@ -30,7 +30,7 @@
         <a href="#MeetTheTeam">Meet The Team</a>
         <a href="#Location">Location</a>
         <a href="#Login">Login</a>
-        <a href="Homepage.html" onclick="deleteCookie()" style="float:right">Logout</a>
+        <a href="index.html" id="Logoutbtn" style="float:right">Logout</a>
         <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
     
@@ -116,14 +116,14 @@
 
         <section class="AboutUsSection">
                 <h2 id="Login" class="Headings">Login</h2>
-            <form >
+            <form id="LoginForm" action="index.html">
                 <fieldset>
                     <legend>Account Details</legend>
                     <input type="text" name="Username" id="cookietest" placeholder="Username.." />
                     <br />
                     <input type="password" placeholder="Password.." />
                     <br />
-                    <input type="submit" name="Login" onclick="checkCookie()" />
+                    <input type="submit" id="Loginbtn" name="Login" />
                     <br />
                 </fieldset>
             </form>
