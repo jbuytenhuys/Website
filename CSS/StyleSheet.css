@@ -35,7 +35,7 @@
     left: 25%;
     transform: translate(-50%, -50%);
     color:White;
-    font-size:13px;
+    font-size:4vw;
     font-family: 'Times New Roman';
 }
 
@@ -45,7 +45,7 @@
     left: 25%;
     transform: translate(-50%, -50%);
     color:White;
-    font-size:9px;
+    font-size:2vw;
     font-family: 'Times New Roman';
 }
 
@@ -54,17 +54,11 @@ input{
     height: 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    margin-bottom:10px;
 }
 
 input:focus {
     width: 100%;
-}
-
-.Login-Form {
-    width:15%;
-    position:fixed;
-   top:50%;
-   left:40%;
 }
 
 .navbar a:not(:first-child) {
@@ -133,8 +127,19 @@ input:focus {
     margin:auto;
 }
 
+.LoginSection {
+    text-align: center;
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+}
+.Footer {
+    text-align: center;
+    position: relative;
+}
+
 .About-Us-Text{
-    font-size:10px;
+    font-size:4vw;
 }
 
 * {box-sizing:border-box}
@@ -223,7 +228,7 @@ input:focus {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation for text boxes */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -244,18 +249,11 @@ input:focus {
 .GoogleMap{
      width:250px; 
      height:200px;
-     border:0;
+     border:solid;
+     border-width:1px;
 }
 
 @media screen and (min-width: 450px) {
-
-    .Img-Title{
-        font-size:20px;
-    }
-
-    .Img-Text{
-        font-size:10px;
-    }
 
     .AboutUsSection{
         
@@ -299,14 +297,6 @@ input:focus {
 
 @media screen and (min-width: 700px) {
 
-    .Img-Title{
-        font-size:30px;
-    }
-
-    .Img-Text{
-        font-size:20px;
-    }
-
     .AboutUsSection{
         
         max-width:700px;
@@ -331,7 +321,7 @@ input:focus {
     }
 
     .VetText {
-        padding-left: 340px;
+        padding-left: 270px;
         font-size: 15px;
         top:40px;
         
@@ -381,14 +371,6 @@ input:focus {
         color:papayawhip;
     }
 
-    .Img-Title{
-        font-size:40px;
-    }
-
-    .Img-Text{
-        font-size:25px;
-    }
-
     .AboutUsSection{
         
         max-width:950px;
@@ -420,10 +402,10 @@ input:focus {
     }
 
     .GoogleMap{
-        width:500px; 
+        width:650px; 
         height:500px;
     }
-
+    
     .Headings{
         font-size:25px;
     }
