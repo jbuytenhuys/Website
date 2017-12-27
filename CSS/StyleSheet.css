@@ -10,7 +10,7 @@
     text-align: center;
     background-color: papayawhip;
     margin-top:25px;
-    max-height:300px;
+    max-height:400px;
     height:auto;
 }
 
@@ -25,7 +25,7 @@
 .Top-Img {
     opacity:0.7;
     width:80%;
-    max-height:300px;
+    max-height:400px;
     height:auto;
 }
 
@@ -188,7 +188,7 @@ input:focus {
 
 /* Caption text */
 .text {
-  color: red;
+  color: black;
   font-size: 12px;
   position: absolute;
   top:0;
