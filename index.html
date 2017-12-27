@@ -31,7 +31,7 @@
         <a href="#Location">Location</a>
         <a href="#Login" id="NavLogin">Login</a>
         <a href="index.html" id="Logoutbtn" style="float:right">Logout</a>
-        <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="javascript:void(0);" id="NavExpand" class="icon" >&#9776;</a>
     </nav>
     
         <script src="Javascript/Navbar.js"></script>
@@ -93,15 +93,15 @@
                     </div>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" id="PreviousSlide">&#10094;</a>
+                <a class="next" id="NextSlide">&#10095;</a>
             </div>
             <br>
 
             <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" id="FirstDot"></span>
+                <span class="dot" id="SecondDot"></span>
+                <span class="dot" id="ThirdDot"></span>
             </div>
     
         </section>

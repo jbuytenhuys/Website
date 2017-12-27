@@ -1,12 +1,32 @@
 ﻿var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+document.getElementById('PreviousSlide').addEventListener('click', PreviousSlide);
+document.getElementById('NextSlide').addEventListener('click', NextSlide);
+
+function NextSlide() {
+    showSlides(slideIndex += 1);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function PreviousSlide() {
+    showSlides(slideIndex += -1);
+}
+
+document.getElementById('FirstDot').addEventListener('click', FirstSlide);
+document.getElementById('SecondDot').addEventListener('click', SecondSlide);
+document.getElementById('ThirdDot').addEventListener('click', ThirdSlide);
+
+
+function FirstSlide() {
+    showSlides(slideIndex = 1);
+}
+
+function SecondSlide() {
+    showSlides(slideIndex = 2);
+}
+
+function ThirdSlide() {
+    showSlides(slideIndex = 3);
 }
 
 function showSlides(n) {
