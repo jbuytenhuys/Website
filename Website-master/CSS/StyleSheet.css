@@ -1,0 +1,418 @@
+﻿body {
+}
+
+.Text-Center{
+    text-align:center;
+}
+
+.Img-Homepage-Container {
+    position: relative;
+    text-align: center;
+    background-color: papayawhip;
+    margin-top:25px;
+    max-height:300px;
+    height:auto;
+}
+
+.Img-Login-Container {
+    position: relative;
+    text-align: center;
+    background-color: papayawhip;
+    max-height:300px;
+    height:auto;
+}
+
+.Top-Img {
+    opacity:0.7;
+    width:80%;
+    max-height:300px;
+    height:auto;
+}
+
+.Img-Title {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:White;
+    font-size:4vw;
+    font-family: 'Times New Roman';
+}
+
+.Img-Text {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color:White;
+    font-size:2vw;
+    font-family: 'Times New Roman';
+}
+
+input{
+    width:40%;
+    height: 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom:10px;
+}
+
+input:focus {
+    width: 100%;
+}
+
+.navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+        font-size:15px
+    }
+    .navbar.responsive {
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 500;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+.navbar {
+  overflow: hidden;
+  z-index: 500;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a:hover{
+    background-color:black;
+    color:papayawhip;
+}
+
+.Headings{
+    text-align:center;
+    font-size:15px;
+}
+
+.AboutUsSection{
+    text-align:center;
+    position:relative;
+    max-width:750px;
+    margin:auto;
+}
+
+.LoginSection {
+    text-align: center;
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+}
+.Footer {
+    text-align: center;
+    position: relative;
+}
+
+.About-Us-Text{
+    font-size:4vw;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.Slide-Img{
+    
+    width:150px;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: blanchedalmond;
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top:0;
+  width: 100%;
+  text-align: center;
+}
+
+.VetText {
+    padding-left: 125px;
+    font-size: 11px;
+    position: absolute;
+    top:25px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation for text boxes */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.GoogleMap{
+     width:250px; 
+     height:200px;
+     border:solid;
+     border-width:1px;
+}
+
+@media screen and (min-width: 450px) {
+
+    .AboutUsSection{
+        
+        max-width:450px;
+    }
+
+    .About-Us-Text{
+        font-size:20px;
+    }
+
+    .slideshow-container {
+        max-width: 450px;
+    }
+
+    .Slide-Img{
+        height:200px;
+        width:200px;
+    }
+
+    .text {
+        font-size: 20px;
+      
+    }
+
+    .VetText {
+        padding-left: 170px;
+        font-size: 15px;
+        top:40px;
+        
+    }
+
+    .GoogleMap{
+        width:300px; 
+        height:300px;
+    }
+
+    .Headings{
+        font-size:20px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .AboutUsSection{
+        
+        max-width:700px;
+    }
+
+    .About-Us-Text{
+        font-size:20px;
+    }
+
+    .slideshow-container {
+        max-width: 700px;
+    }
+
+    .Slide-Img{
+        height:300px;
+        width:300px;
+    }
+
+    .text {
+        font-size: 20px;
+      
+    }
+
+    .VetText {
+        padding-left: 270px;
+        font-size: 15px;
+        top:40px;
+        
+    }
+
+    .GoogleMap{
+        width:400px; 
+        height:400px;
+    }
+
+    .Headings{
+        font-size:20px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .navbar a:not(:first-child) {
+        display: block;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      z-index: 500;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar a.icon {
+      display: none;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    .navbar a:hover{
+        background-color:black;
+        color:papayawhip;
+    }
+
+    .AboutUsSection{
+        
+        max-width:950px;
+    }
+
+    .About-Us-Text{
+        font-size:20px;
+    }
+
+    .slideshow-container {
+        max-width: 950px;
+    }
+
+    .Slide-Img{
+        height:400px;
+        width:400px;
+    }
+
+    .text {
+        font-size: 25px;
+      
+    }
+
+    .VetText {
+        padding-left: 340px;
+        font-size: 20px;
+        top:40px;
+        
+    }
+
+    .GoogleMap{
+        width:650px; 
+        height:500px;
+    }
+    
+    .Headings{
+        font-size:25px;
+    }
+}
+
+
+
+
+
+
