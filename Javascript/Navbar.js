@@ -11,7 +11,10 @@ function myFunction() {
     }
 }
 
-
+//javascript for reducing the distance the page scrolls when jumping to an anchored heading
+        var shiftWindow = function () { scrollBy(0, -62) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
 
 // When the user scrolls down 300px from the top of the document, show the back to top button
 window.onscroll = function () { scrollFunction() };
