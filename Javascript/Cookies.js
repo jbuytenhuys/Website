@@ -44,6 +44,7 @@ function checkCookie(User) {
         alert("Thankyou, " + plsbecookie + ", for logging in");
         setCookie('Username', plsbecookie, 30);
         checkCookie();
+        window.scrollTo(0, 0);
 
 
     }
