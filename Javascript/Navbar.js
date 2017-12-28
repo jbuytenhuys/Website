@@ -17,12 +17,18 @@ function myFunction() {
         function load() { if (window.location.hash) shiftWindow(); }
 
 // When the user scrolls down 300px from the top of the document, show the back to top button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { DisplayToTopButton() };
 
-function scrollFunction() {
+function DisplayToTopButton() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("TopBtn").style.display = "block";
     } else {
         document.getElementById("TopBtn").style.display = "none";
     }
+}
+
+document.getElementById('TopBtn').addEventListener('click', ScrollToTop)
+
+function ScrollToTop() {
+    window.scrollTo(0, 0);
 }

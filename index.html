@@ -4,33 +4,38 @@
     <title>Login or Register</title>
     <meta charset="utf-8" />
     <meta lang="en" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jake Buytenhuys" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/StyleSheet.css" />
     
 </head>
 <body>
-    
+    <!--section that holds the websites heading, welcome message and image-->
     <section class="Img-Homepage-Container">
         <img class="Top-Img" src="Images/tester.jpg" alt="dog">
         <h1 id="Top" class="Img-Title">DeMonfort Vets</h1>
         <p class="Img-Text">
+            <!--if cookie has been set then the text within the span tag is replaced with a username-->
             welcome, <span id="Username">unknown user</span>
         </p>
     </section>
-
+    <!--Nav tag to hold the navigation bar
+        the '#' links are anchored headings-->
     <nav class="navbar" id="Topnav">
-        <a href="#Top" id="TopBtn" style="display:none;">Back to Top</a>
+        <!--href is left blank on the 'Back to top' nav button as this is handled by the javascript-->
+        <a href="" id="TopBtn" style="display:none;">Back to Top</a>
         <a href="#AboutUs">About Us</a>
         <a href="#MeetTheTeam">Meet The Team</a>
         <a href="#Location">Location</a>
         <a href="#Login" id="NavLogin">Login</a>
         <a href="index.html" id="Logoutbtn" style="float:right">Logout</a>
+        <!--below is the icon that shows once the webpage goes below a certain size.-->
         <a href="javascript:void(0);" id="NavExpand" class="icon" >&#9776;</a>
     </nav>
-    
-        <script src="Javascript/Navbar.js"></script>
+        
     
     <main>
+        <!--section to hold the about us section of the website-->
         <section class="AboutUsSection">
             <h2 id="AboutUs" class="Headings">About Us</h2>
             <p class="About-Us-Text">
@@ -40,24 +45,25 @@
                 Our vets and nurses are highly skilled and are equipped with advanced technology to ensure rapid diagnosis and treatment for your pet.<br />
                 <br />We are a long established practice with our HQ in DeMonfort, Leicester.
             </p>
-
         </section>
-        <hr />
-        <section>
 
+        <hr />
+        <!--section to hold the meet the team section of the website
+            this section also includes a container for the slideshow.
+            each slide in the slideshow has its own div tag-->
+        <section>
             <h2 id="MeetTheTeam" class="Headings">Meet The Team</h2>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
                     <img class="Slide-Img" alt="Jonny Davidson - DeMontfort Vet" src="Images/Doctor1.jpg">
                     <div>
-                    <p class="text">Jonny Davidson</p>
+                        <p class="text">Jonny Davidson</p>
                         <p class="VetText">
                             Jonny graduated from Cambridge University in July 1991. He has worked within the Leicestershire and Northamptonshire area ever since,
                             and has always enjoyed his work at DeMonfort Vets, getting to know the clients and their pets well over the years.<br />
                             <br />He has a particular interest in orthopaedic surgery.
                         </p>
-                    
                     </div>
                 </div>
 
@@ -77,40 +83,43 @@
                     <div class="numbertext">3 / 3</div>
                     <img class="Slide-Img" alt="Rick Grimes - DeMontfort Vet" src="Images/Doctor3.jpg">
                     <div>
-                    <p class="text">Rick Grimes</p>
+                        <p class="text">Rick Grimes</p>
                         <p class="VetText" >
                             Rick qualified from Liverpool University in 2002. After a short stay in Canada, working as a mixed practice vet, he moved to Chippenham for a further 8 years. 
                             Rick joined DeMontfort Vets in 2010 to concentrate on small animal medicine.<br />
                             <br />He likes his case load, loves the clients and enjoys working with a really good team.
                         </p>
-                    
                     </div>
                 </div>
-
+                <!--buttons to go back and forth between slides
+                    originally used on clicks but i changed them for event listeners-->
                 <a class="prev" id="PreviousSlide">&#10094;</a>
                 <a class="next" id="NextSlide">&#10095;</a>
             </div>
             <br>
-
+            <!--dot beneath the slideshow to indicate what slide is showing.
+                also can be used to navigate the slideshow and like before also used to have on clicks-->
             <div style="text-align:center">
                 <span class="dot" id="FirstDot"></span>
                 <span class="dot" id="SecondDot"></span>
                 <span class="dot" id="ThirdDot"></span>
             </div>
-    
         </section>
-        <hr />
 
+        <hr />
+        <!--section hat holds the google map API-->
         <section class="Text-Center">
             <h2 id="Location" class="Headings">Location</h2>
             <iframe class="GoogleMap" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyB4YbNg3-J_UEJnL6Jw-tUr350P9OFptEk" allowfullscreen></iframe>
         </section>
 
         <hr />
-
+        <!--last section that holds the login form-->
         <section class="LoginSection">
                 <h2 id="Login" class="Headings">Login</h2>
-            <form id="LoginForm" action="#Top">
+            <!--the form simply reloads the homepage whilst passing the data collected in the text boxes to an external
+                .js file to handle the cookies.-->
+            <form id="LoginForm" action="index.html">
                 <fieldset>
                     <legend>Account Details</legend>
                     <p>
@@ -128,7 +137,7 @@
         <hr />
         <footer class="Footer">© 2004 DeMontfort Veterinary Practice</footer>
     </main>
-   
+    <script src="Javascript/Navbar.js"></script>
     <script src="Javascript/Slideshow.js"></script>
     <script src="Javascript/Cookies.js"></script>
 </body>
