@@ -13,13 +13,13 @@ Things like the navbar still need to be added.
 In order to change these to event listeners i had to create some new functions as it would not allow me to pass a parameter through the event listener. 
 An example of this is given below.
 #### Before
-'''javascript
+```javascript
 function plusSlides(n) {
 	showSlides(slideIndex += n);
 }
-'''
-####After
-'''javascript
+```
+#### After
+```javascript
 function NextSlide() {
     showSlides(slideIndex += 1);
 }
@@ -27,7 +27,7 @@ function NextSlide() {
 function PreviousSlide() {
     showSlides(slideIndex += -1);
 }
-'''
+```
 
 
 ## Changes made after user testing feedback
