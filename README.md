@@ -102,3 +102,12 @@ The accessiblity checker throws up 7 known problems however these problems are a
 to explain to the user what data belongs in whihc text box. instead of labels though, i have used placeholders within the text for a simpler look.
 below is an example of one of the problems. they are all the same so 7 different screen shots arent necessary.
 ![HTMLaccessibility](Images/AccessibilityChecker.JPG)
+
+## References
+* https://www.w3schools.com/w3css/w3css_slideshow.asp
+* https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+* http://code.stephenmorley.org/javascript/using-cookies/
+* https://developers.google.com/maps/
+* https://www.w3schools.com/cssref/pr_pos_z-index.asp
+
+
