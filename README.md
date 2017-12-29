@@ -1,5 +1,7 @@
 # DeMontfort Vets Website
 
+I coded the website mobile first using my iphone SE as the tester device
+
 ## Initial Designs
 ### First Draft
 This is the first design of how the page will be layed out and showing that it is intended to be a single page app. More designs will follow as this is only a draft.
@@ -10,7 +12,6 @@ Things like the navbar still need to be added.
 I decided to create a single page app using anchored headings in order to keep the navigation for the page quick and simple. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
 below is an illustration of this from the initial design phase.
 ![SPAexample](Images/SPAexample.JPG)
-
 
 ### Finalised design
 As you can see, this design now has the nav bar at the top with a few other changes described in the image.
@@ -102,7 +103,7 @@ No errors were found in my CSS!
 
 ### HTML Accessibility
 The accessiblity checker throws up 7 known problems however these problems are all related to the fact that the text boxes in my login form do not have lables
-to explain to the user what data belongs in whihc text box. instead of labels though, i have used placeholders within the text for a simpler look.
+to explain to the user what data belongs in which text box. instead of labels though, i have used placeholders within the text for a simpler look.
 below is an example of one of the problems. they are all the same so 7 different screen shots arent necessary.
 ![HTMLaccessibility](Images/AccessibilityChecker.JPG)
 
