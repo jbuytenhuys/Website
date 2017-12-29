@@ -8,7 +8,7 @@ Things like the navbar still need to be added.
 
 ### Example of single page app functionality
 I decided to create a single page app using anchored headings. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
-below is an illustration of this from the initial design phase. **Image below does not seem to want to work, please open it from the images folder**
+below is an illustration of this from the initial design phase.
 ![SPAexample](Images/SPAexample.JPG)
 
 
@@ -96,3 +96,9 @@ the changes of code are shown below
 ### CSS validator
 No errors were found in my CSS!
 ![CSSvalid](Images/CSSvalidator.JPG)
+
+### HTML Accessibility
+The accessiblity checker throws up 7 known problems however these problems are all related to the fact that the text boxes in my login form do not have lables
+to explain to the user what data belongs in whihc text box. instead of labels though, i have used placeholders within the text for a simpler look.
+below is an example of one of the problems. they are all the same so 7 different screen shots arent necessary.
+![HTMLaccessibility](Images/AccessibilityChecker.JPG)
