@@ -8,8 +8,8 @@ Things like the navbar still need to be added.
 
 ### Example of single page app functionality
 I decided to create a single page app using anchored headings. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
-below is an illustration of this from the initial design phase.
-![Example1](Images/SPAexample.JPG)
+below is an illustration of this from the initial design phase. **Image below does not seem to want to work, please open it from the images folder**
+![SPAexample](Images/SPAexample.JPG)
 
 
 ### Finalised design
@@ -77,3 +77,22 @@ function HideLoginForm() {
     checkCookie();
 }
 ```
+
+## Code Checkers
+
+### HTML Validator
+![HTMLvalid](Images/HTMLvalidator.JPG)
+The HTML validator returned one warning and one error both related to similar things. these were easy fixes, all i had to do was move the language from the meta tag to the main html tag. 
+the changes of code are shown below
+#### Before
+```HTML
+<meta lang="en">
+```
+#### After
+```HTML
+<html lang="en">
+```
+
+### CSS validator
+No errors were found in my CSS!
+![CSSvalid](Images/CSSvalidator.JPG)
