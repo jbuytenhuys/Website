@@ -1,10 +1,10 @@
 ﻿body {
 }
-
+/*class to align text to the center*/
 .Text-Center{
     text-align:center;
 }
-
+/*class that styles the top container which holds the title, welcome message and image*/
 .Img-Homepage-Container {
     position: relative;
     text-align: center;
@@ -13,32 +13,25 @@
     max-height:400px;
     height:auto;
 }
-
-.Img-Login-Container {
-    position: relative;
-    text-align: center;
-    background-color: papayawhip;
-    max-height:300px;
-    height:auto;
-}
-
+/*class to style the image within the top container*/
 .Top-Img {
     opacity:0.7;
     width:80%;
     max-height:400px;
     height:auto;
 }
-
+/*class to style the title within the top container*/
 .Img-Title {
     position: absolute;
     top: 30%;
     left: 25%;
     transform: translate(-50%, -50%);
-    color:White;
-    font-size:4vw;
+    color: White;
+    /*vw is relative to 1% of the width of the viewport and allows the img title to be responsive*/
+    font-size: 4vw;
     font-family: 'Times New Roman';
 }
-
+/*class to style the welcome message at top of page. again, this class also uses 'vw'*/
 .Img-Text {
     position: absolute;
     top: 70%;
@@ -49,46 +42,38 @@
     font-family: 'Times New Roman';
 }
 
-input{
-    width:40%;
-    height: 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    margin-bottom:10px;
-}
-
-input:focus {
-    width: 100%;
-}
-
+/*below is the group of css that controls the navigation bar*/
+/*this first line styles the nav bar so that only the first child(item) is displayed*/
 .navbar a:not(:first-child) {
         display: none;
     }
-
+    /*class to style the nav bar icon*/
     .navbar a.icon {
         float: right;
         display: block;
         font-size:15px
     }
+    /*class that styles the responsive navbar*/
     .navbar.responsive {
         position: fixed;
         top: 0;
         overflow: hidden;
+        /*z-index sets the stack order and allows the navbar to always be infront of other elements*/
         z-index: 500;
     }
-
+    /*class that controls the responsiveness of the navbar icon*/
     .navbar.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-
+    /*class the controls the responsiveness of the links in the navbar*/
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
-
+/*class to style the navbar*/
 .navbar {
   overflow: hidden;
   z-index: 500;
@@ -97,9 +82,7 @@ input:focus {
   top: 0;
   width: 100%;
 }
-
-
-
+/*class to style the navbar links*/
 .navbar a {
   float: left;
   display: block;
@@ -109,40 +92,28 @@ input:focus {
   text-decoration: none;
   font-size: 30px;
 }
-
+/*class to style how the links appear when the user is hovering over them*/
 .navbar a:hover{
     background-color:black;
     color:papayawhip;
 }
 
+/*class to style all of the headings within the html*/
 .Headings{
     text-align:center;
     font-size:15px;
 }
-
+/*class to style the about us section*/
 .AboutUsSection{
     text-align:center;
     position:relative;
     max-width:750px;
     margin:auto;
 }
-
-.LoginSection {
-    text-align: center;
-    position: relative;
-    max-width: 750px;
-    margin: auto;
-}
-.Footer {
-    text-align: center;
-    position: relative;
-}
-
+/*class to style the text withing the about us section*/
 .About-Us-Text{
     font-size:4vw;
 }
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -150,9 +121,8 @@ input:focus {
   position: relative;
   margin: auto;
 }
-
+/*styles the images in the slideshow*/
 .Slide-Img{
-    
     width:150px;
 }
 
@@ -186,7 +156,7 @@ input:focus {
   background-color: blanchedalmond;
 }
 
-/* Caption text */
+/* styles the image caption text */
 .text {
   color: black;
   font-size: 12px;
@@ -195,7 +165,7 @@ input:focus {
   width: 100%;
   text-align: center;
 }
-
+/* styles the text about each vet*/
 .VetText {
     padding-left: 125px;
     font-size: 11px;
@@ -203,7 +173,7 @@ input:focus {
     top:25px;
 }
 
-/* Number text (1/3 etc) */
+/* styles the number text (1/3 etc) */
 .numbertext {
   color: black;
   font-size: 12px;
@@ -212,7 +182,7 @@ input:focus {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* styles the dots */
 .dot {
   cursor:pointer;
   height: 15px;
@@ -223,36 +193,60 @@ input:focus {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+/* styles foe when user hovers over dots*/
 .active, .dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation for text boxes */
+/* Fading animation for each slide */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
+/* styles for the fading in of each slide show*/
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+/* class to style the google map API*/
 .GoogleMap{
      width:250px; 
      height:200px;
      border:solid;
      border-width:1px;
 }
-
+/*class to style the login section*/
+.LoginSection {
+    text-align: center;
+    position: relative;
+    max-width: 750px;
+    margin: auto;
+}
+/*below is the css that styles all of the input elements*/
+input {
+    width: 40%;
+    height: 40px;
+    /*webkit is a browser rendering engine for chrome and transition allows a smooth change of property value*/
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 10px;
+}
+    /*focus selector is used to alter the size of the input box once it is in focus
+      in this instance, once the text box is clicked in, the text box will expand to 100% of its container
+    */
+    input:focus {
+        width: 100%;
+    }
+/*class to style the footer*/
+.Footer {
+    text-align: center;
+    position: relative;
+}
+/*everything within this media tag will be applied once the width of the webpage 
+  goes over 450px
+*/
 @media screen and (min-width: 450px) {
 
     .AboutUsSection{
@@ -294,7 +288,9 @@ input:focus {
         font-size:20px;
     }
 }
-
+/*everything within this media tag will be applied once the width of the webpage 
+  goes over 700px
+*/
 @media screen and (min-width: 700px) {
 
     .AboutUsSection{
@@ -336,7 +332,9 @@ input:focus {
         font-size:20px;
     }
 }
-
+/*everything within this media tag will be applied once the width of the webpage 
+  goes over 950px
+*/
 @media screen and (min-width: 950px) {
 
     .navbar a:not(:first-child) {
