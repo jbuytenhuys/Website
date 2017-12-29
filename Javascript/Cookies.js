@@ -1,8 +1,10 @@
-﻿function setCookie(cname, cvalue, exdays) {
-    let d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires=" + d.toGMTString();
-    //document.cookie = document.getElementById('cookietest')
+﻿//This functiom sets the cookie
+function setCookie(cname, cvalue, exdays) {
+    //sets variable Date to hold the Date value
+    let Date = new Date();
+    //
+    Date.setTime(Date.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + Date.toGMTString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -40,9 +42,9 @@ function checkCookie(User) {
     } else {
         //if (User != "" && User != null) {
 
-        let plsbecookie = document.getElementById('cookietest').value;
-        alert("Thankyou, " + plsbecookie + ", for logging in");
-        setCookie('Username', plsbecookie, 30);
+        let CookieName = document.getElementById('Username').value;
+        alert("Thankyou, " + CookieName + ", for logging in");
+        setCookie('Username', CookieName, 30);
         checkCookie();
         window.scrollTo(0,0);
 
