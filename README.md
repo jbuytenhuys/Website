@@ -6,7 +6,7 @@ This is the first design of how the page will be layed out and showing that it i
 Things like the navbar still need to be added.
 ![First Design](Images/InitialDesign.JPG)
 
-###Finalised design
+### Finalised design
 
 ## Issues
 - **OnClicks** - As the slideshow i have used was adapted from a w3schools tutorial, it still contained some onclicks within the html. 

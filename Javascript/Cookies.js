@@ -1,9 +1,9 @@
 ﻿//This functiom sets the cookie
 function setCookie(cname, cvalue, exdays) {
     //sets variable Date to hold the Date value
-    let Date = new Date();
-    Date.setTime(Date.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires=" + Date.toGMTString();
+    let d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toGMTString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 // function to get the cookie
@@ -48,13 +48,13 @@ function checkCookie(User) {
     } else {
         //if (User != "" && User != null) {
 
-        let CookieName = document.getElementById('Username').value;
+        let CookieName = document.getElementById('cookieValue').value;
         alert("Thankyou, " + CookieName + ", for logging in");
         setCookie('Username', CookieName, 30);
         checkCookie();
         //once logging in the page will scroll back to the top to display a welcome message
-        window.scrollTo(0,0);
-        
+        window.scrollTo(0, 0);
+
     }
 }
 //event listener that calls the function deleteCookie once the logout button is clicked
