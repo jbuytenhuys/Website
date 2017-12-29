@@ -7,7 +7,7 @@ Things like the navbar still need to be added.
 ![First Design](Images/InitialDesign.JPG)
 
 ### Example of single page app functionality
-I decided to create a single page app using anchored headings. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
+I decided to create a single page app using anchored headings in order to keep the navigation for the page quick and simple. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
 below is an illustration of this from the initial design phase.
 ![SPAexample](Images/SPAexample.JPG)
 
@@ -17,6 +17,9 @@ As you can see, this design now has the nav bar at the top with a few other chan
 ![Final Design](Images/FinalDesign.JPG)
 
 ## Issues
+- **Cookies** - besides the difficulty in actually creating the code for cookies, which i eventually figured out, there is an issue where if the page is refreshed
+then the welcome message will not have the userrname in it. this should not happen as the whole point of the cookie is that it stores the user info even if the page is refreshed. 
+I was unable to come up with a solution though unfortunatly for this particular issue.
 - **OnClicks** - As the slideshow i have used was adapted from a w3schools tutorial, it still contained some onclicks within the html. 
 In order to change these to event listeners i had to create some new functions as it would not allow me to pass a parameter through the event listener. 
 An example of this is given below.
