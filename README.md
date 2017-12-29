@@ -9,7 +9,7 @@ Things like the navbar still need to be added.
 ### Example of single page app functionality
 I decided to create a single page app using anchored headings. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
 below is an illustration of this from the initial design phase.
-![Example1](Images/SPAexample.jpg)
+![Example1](Images/SPAexample.JPG)
 
 
 ### Finalised design
