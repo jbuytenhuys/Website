@@ -8,7 +8,7 @@ Things like the navbar still need to be added.
 
 ### Finalised design
 As you can see, this design now has the nav bar at the top with a few other changes described in the image.
-![Final Design] (Images/FinalDesign.JPG)
+![Final Design](Images/FinalDesign.JPG)
 
 ## Issues
 - **OnClicks** - As the slideshow i have used was adapted from a w3schools tutorial, it still contained some onclicks within the html. 
@@ -46,5 +46,7 @@ function DisplayToTopButton() {
     }
 }
 ```
+####Before Scroll
 ![Example1](Images/BacktoTopExample1.JPG)
+####After Scroll
 ![Example1](Images/BacktoTopExample2.JPG)
