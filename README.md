@@ -1,10 +1,16 @@
 # DeMontfort Vets Website
 
-## Initial Designs and prototype
+## Initial Designs
 ### First Draft
 This is the first design of how the page will be layed out and showing that it is intended to be a single page app. More designs will follow as this is only a draft.
 Things like the navbar still need to be added.
 ![First Design](Images/InitialDesign.JPG)
+
+### Example of single page app functionality
+I decided to create a single page app using anchored headings. The webpage will automatically scroll the user down to whichever heading they selected in the navigation bar.
+below is an illustration of this from the initial design phase.
+![SPAexample](images/SPAexample.JPG)
+
 
 ### Finalised design
 As you can see, this design now has the nav bar at the top with a few other changes described in the image.
@@ -31,6 +37,11 @@ function PreviousSlide() {
 }
 ```
 
+- **Empty login issue** - There is still currently an issue that occurs when the user attempts to log in without entering any data in the loging form text boxes.
+Doing this causes the alert to constantly loop wihtout being able to get out. 
+This issue was also raised in the user testing however i have been unable to find a fix for it. 
+it is difficult to provide screeshots of this issue in action as it just repeats the same alert message over and over again
+
 ## Changes made after user testing feedback
 - **Back to Top Button** - After the user testing it became clear that there needed to be a quicker way for the user to get back to the top of the page.
 I therefore added a .js function will display a back to top button once the user has scrolled a certain amount down the page. 
@@ -49,4 +60,20 @@ function DisplayToTopButton() {
 #### Before Scroll
 ![Example1](Images/BacktoTopExample1.JPG)
 #### After Scroll
-![Example1](Images/BacktoTopExample2.JPG)
+![Example2](Images/BacktoTopExample2.JPG)
+
+- **Hiding login form after user has logged in** - Another point brought forward during the user testing was the fact that the login form was still displayed after the user logged in.
+This became comfusing for some users so i added some code to hde the login form. this code is displayed below.
+```javascript
+document.getElementById('Loginbtn').addEventListener('click', HideLoginForm)
+let LoginForm = document.getElementById("LoginForm")
+let LoginHeading = document.getElementById("Login")
+let NavLogin = document.getElementById("NavLogin")
+
+function HideLoginForm() {
+    LoginForm.style.display = "none";
+    LoginHeading.style.display = "none";
+    NavLogin.style.display = "none";
+    checkCookie();
+}
+```
